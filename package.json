@@ -1,19 +1,90 @@
 {
-  "name": "ng-outside-click",
-  "version": "1.0.0",
-  "description": "Angular directive that excutes an expression when an element outside the specified element is clicked (used to close dialogs and pickers)",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/superdevofficial/ng-outside-click",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/superdevofficial/ng-outside-click",
+        "spec": "git+https://github.com/superdevofficial/ng-outside-click.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:superdevofficial/ng-outside-click.git",
+          "sshUrl": "git+ssh://git@github.com/superdevofficial/ng-outside-click.git",
+          "httpsUrl": "git+https://github.com/superdevofficial/ng-outside-click.git",
+          "gitUrl": "git://github.com/superdevofficial/ng-outside-click.git",
+          "shortcut": "github:superdevofficial/ng-outside-click",
+          "directUrl": "https://raw.githubusercontent.com/superdevofficial/ng-outside-click/master/package.json"
+        }
+      },
+      "/Users/admin/Documents/Superdev/nisha"
+    ]
+  ],
+  "_from": "git+https://github.com/superdevofficial/ng-outside-click.git",
+  "_id": "ng-outside-click@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ng-outside-click",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/superdevofficial/ng-outside-click",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/superdevofficial/ng-outside-click",
+    "spec": "git+https://github.com/superdevofficial/ng-outside-click.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:superdevofficial/ng-outside-click.git",
+      "sshUrl": "git+ssh://git@github.com/superdevofficial/ng-outside-click.git",
+      "httpsUrl": "git+https://github.com/superdevofficial/ng-outside-click.git",
+      "gitUrl": "git://github.com/superdevofficial/ng-outside-click.git",
+      "shortcut": "github:superdevofficial/ng-outside-click",
+      "directUrl": "https://raw.githubusercontent.com/superdevofficial/ng-outside-click/master/package.json"
+    }
   },
-  "author": "Abdelrahman Barakat <abdelrahman.barakat@gmail.com>",
-  "repository": "https://github.com/abrkt/ng-outside-click.git",
-  "license": "MIT",
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/superdevofficial/ng-outside-click.git#3e63fba62502f387b76fbb4a9d634c6415301523",
+  "_shasum": "89baf151a3d599fded3f48b2a2877000c9eeaee2",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/superdevofficial/ng-outside-click",
+  "_where": "/Users/admin/Documents/Superdev/nisha",
+  "author": {
+    "name": "Abdelrahman Barakat",
+    "email": "abdelrahman.barakat@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/abrkt/ng-outside-click/issues"
+  },
+  "dependencies": {},
+  "description": "Angular directive that excutes an expression when an element outside the specified element is clicked (used to close dialogs and pickers)",
   "devDependencies": {
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.3",
     "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.0",
     "phantomjs": "^1.9.17"
-  }
+  },
+  "gitHead": "3e63fba62502f387b76fbb4a9d634c6415301523",
+  "homepage": "https://github.com/abrkt/ng-outside-click#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "ng-outside-click",
+  "optionalDependencies": {},
+  "readme": "# ng-outside-click\nAngular directive to evaluate expression when an element outside the directive element is clicked\n## Usage\n``` html\n<script>\n  var app = angular.module('app', ['ngOutsideClick']).run(function($rootScope){\n    $rootScope.outsideClick = function(){\n      console.log('clicked outside');\n    }\n  });\n</script>\n\n<div outside-click=\"outsideClick()\">\n  Clicking anywhere outside this div will trigger the expression in outside-click attribute\n</div>\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrkt/ng-outside-click.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
